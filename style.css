@@ -483,51 +483,45 @@ section form input[type="submit"]:hover {
 }
 
 
-/* ერორ მესიჯის სტილი */
 .error-text {
     color: red;
     font-size: 13px;
-    margin-top: -15px; /* რომ ინპუტთან ახლოს იყოს */
+    margin-top: -15px; 
     margin-bottom: 15px;
     display: block;
     font-family: "Roboto", sans-serif;
 }
 
-/* ეს დაამატე, რათა ანიმაცია იყოს რბილი */
 .nav1 {
-    transition: padding 0.3s ease; /* padding-ის შეცვლა იქნება გლუვი */
+    transition: padding 0.3s ease; 
 }
 
 .header {
-    transition: box-shadow 0.3s ease; /* ჩრდილის გაჩენა იქნება გლუვი */
+    transition: box-shadow 0.3s ease;
 }
 
-/* კლასი, რომელსაც JS-ით დავამატებთ სქროლვისას */
 .header.scrolled {
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* ლამაზი ჩრდილი */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); 
 }
 
-/* როცა სქროლავს, ჰედერი ოდნავ დაპატარავდეს (padding შემცირდეს) */
 .header.scrolled .nav1 {
-    padding: 15px 40px; /* თავიდან გაქვს 40px, აქ ვამცირებთ 15px-მდე */
+    padding: 15px 40px; 
 }
 
-/* localstorage */
 .cookie-container {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #111111; /* მუქი ფონი */
+    background-color: #111111; 
     color: white;
     padding: 20px;
-    display: flex; /* ფლექსი რომ გვერდიგვერდ დადგეს ტექსტი და ღილაკი */
+    display: flex; 
     justify-content: space-between;
     align-items: center;
-    z-index: 9999; /* ყველაფრის ზემოთ რომ იყოს */
+    z-index: 9999;
     box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
     
-    /* თავიდან დავმალოთ, JS გამოაჩენს თუ საჭიროა */
     display: none; 
 }
 
@@ -546,9 +540,10 @@ section form input[type="submit"]:hover {
     border-radius: 20px;
     cursor: pointer;
     font-weight: bold;
-    white-space: nowrap; /* ტექსტი რომ არ ჩამოვარდეს */
+    white-space: nowrap; 
 }
 
 .cookie-container button:hover {
     background-color: #e07b1f;
+
 }
