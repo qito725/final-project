@@ -1,0 +1,554 @@
+.body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    overflow-x: hidden;
+}
+.header {
+    display: flex;
+    background-color: white;
+    position: sticky;
+    max-width: 100%;
+    top: 0;
+    z-index: 1000;  
+}
+.div1 {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.nav1 {
+    display: flex;
+    align-items: center;
+    gap: 448px;
+    padding: 40px;
+}
+.nav1 ul{
+    display: flex;
+    gap: 67px;
+}
+.sec1 {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+.div2 {
+    display: flex;
+    gap: 306px;
+    padding: 20px;
+}
+.left-block {
+    flex-direction: column;
+}
+.left-block h1 {
+    font-size: 95px;
+    line-height: 100%;
+    color: #111111;
+    font-weight: 700;
+    font-style: bold;
+    padding: 10px;
+}
+.left-block p {
+    font-size: 18px;
+    line-height: 100%;
+    color: #F48E28;
+    font-weight: 500;
+    font-style: medium;
+    padding: 20px;
+}
+.left-block button {
+    width: 160px;
+    height: 42px;
+    background-color: #F48E28;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 20px;
+}
+.left-block button:hover {
+  background: #e07b1f;
+}
+
+.right-block {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+    position: relative;
+}
+
+.absolute-block {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    z-index: 2;
+}
+.absolute-block img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.absolute-block h4 {
+    margin: 10px 0 5px;
+    font-size: 26px;
+    line-height: 100%;
+    color: #111111;
+    font-weight: 700;
+    font-style: bold;
+}
+.absolute-block p {
+    margin: 0 0 15px;
+    font-size: 18px;
+    line-height: 100%;
+    color: #111111;
+    font-weight: 500;
+    font-style: medium;
+}
+.price {
+    display: block;
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 100%;
+    color: #F48E28;
+    font-weight: bold;
+}
+.fa-solid fa-arrow-right , .fa-solid fa-arrow-left {
+    font-size: 20px;
+    color: #111111;
+    cursor: pointer;
+}
+h4 {
+    text-align: center;
+    font-size: 36px;
+    color: #F48E28;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+section form {
+    max-width: 400px;
+    margin: 0 auto 80px auto;
+    background-color: #ffffff;
+    padding: 30px 35px;
+    border-radius: 20px;
+}
+
+section form label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #F48E28;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+section form input[type="text"],
+section form input[type="email"],
+section form input[type="password"],
+section form select {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    border: 1px solid #c9dff3;
+    border-radius: 12px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    color:  #F48E28;
+    background-color: #f7fbff;
+    box-sizing: border-box; /* ეს დაამატე რომ padding-მა ზომები არ აურიოს */
+}
+
+/* 2 პაროლის კონტეინერი და თვალის აიკონი */
+.password-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.password-wrapper i {
+    position: absolute;
+    right: 15px;
+    top: 42%; /* ცენტრში რომ დაჯდეს ვერტიკალურად */
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #F48E28;
+    font-size: 16px;
+}
+section form input::placeholder {
+    color: #9bb7d3;
+    font-size: 13px;
+}
+
+section form select {
+    cursor: pointer;
+}
+
+section form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #F48E28;
+    color: #cbf2ff;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+}
+section form input[type="submit"]:hover {
+  background: #e07b1f;
+}
+
+
+.sec4{
+    max-width: 1200px;
+    margin: 60px auto;
+    text-align: center;
+}
+.title{
+    color: #F48E28;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.sec4 h1{
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.div4{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.products{
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+.products img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+.productbody{
+    padding: 20px;
+    text-align: center;
+}
+.productbody h4{
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+.rate{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #F48E28;
+}
+.addbutton{
+    background-color: #F48E28;
+    padding: 8px;
+    border-radius: 30px;    
+    display: flex;
+    cursor: pointer;
+    font-size: 14px;
+    align-items: center;
+    justify-content: space-between;
+}
+.addbutton button{
+    background-color: #ffffff;
+    color: #F48E28;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+}
+.addbutton button:hover{
+    background-color: #e07b1f;
+}
+.price1{
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 14px;
+    padding-right: 10px;
+}
+.see-more {
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f48e28;
+  color: #fff;
+  border: none;
+  padding: 14px 26px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.arrow {
+  width: 32px;
+  height: 32px;
+  background: white;
+  color: #F48E28;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.see-more:hover {
+  background: #e07b1f;
+}
+.footer {
+  background-color: #faf9fb;
+  padding: 70px 20px;
+}
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+.columns{
+    flex-direction: column;
+    text-align: center;
+}
+.columns h4 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #000;
+    
+}
+.columns p {
+    font-size: 18px;
+    color: #999;
+    line-height: 100%;
+    text-decoration: none;
+}
+.columns li {
+    font-size: 18px;
+    color: #999;
+    line-height: 100%;
+    text-decoration: none;
+}
+.columns a {
+    font-size: 18px;
+    color: #999;
+    line-height: 100%;
+    text-decoration: none;
+}
+.columns ul{
+    list-style: none;
+}
+
+.columns img {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.social-media {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.social-media a {
+    width: 35px;
+    height: 35px;
+    background: #fde5c8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f39c12;
+    transition: 0.3s;
+}
+
+.social-media a:hover{
+    background-color: #e07b1f;
+}
+.burger-bar {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #000;
+}
+
+@media (max-width: 720px) {
+  .div1 {
+    width: 100%;
+  }
+  .nav1 {
+    display: flex;
+    gap: 0;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+  }
+  .nav1 ul {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
+  .nav1 ul.active {
+    display: flex; 
+  }
+  .burger-bar{
+    display: block;
+    font-size: 26px;
+    cursor: pointer;
+    color: #000;
+}
+  .sec1 {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .div2 {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .left-block h1 {
+    font-size: 52px;
+    text-align: center;
+  }
+  .left-block {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .right-block img {
+    max-width: 100%;
+  }
+
+  .div4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 320px) {
+
+  .nav1 ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .left-block h1 {
+    font-size: 36px;
+  }
+
+  .left-block button {
+    width: 100%;
+  }
+
+  .div4 {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social-media {
+    justify-content: center;
+  }
+}
+
+
+/* ერორ მესიჯის სტილი */
+.error-text {
+    color: red;
+    font-size: 13px;
+    margin-top: -15px; /* რომ ინპუტთან ახლოს იყოს */
+    margin-bottom: 15px;
+    display: block;
+    font-family: "Roboto", sans-serif;
+}
+
+/* ეს დაამატე, რათა ანიმაცია იყოს რბილი */
+.nav1 {
+    transition: padding 0.3s ease; /* padding-ის შეცვლა იქნება გლუვი */
+}
+
+.header {
+    transition: box-shadow 0.3s ease; /* ჩრდილის გაჩენა იქნება გლუვი */
+}
+
+/* კლასი, რომელსაც JS-ით დავამატებთ სქროლვისას */
+.header.scrolled {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* ლამაზი ჩრდილი */
+}
+
+/* როცა სქროლავს, ჰედერი ოდნავ დაპატარავდეს (padding შემცირდეს) */
+.header.scrolled .nav1 {
+    padding: 15px 40px; /* თავიდან გაქვს 40px, აქ ვამცირებთ 15px-მდე */
+}
+
+/* localstorage */
+.cookie-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #111111; /* მუქი ფონი */
+    color: white;
+    padding: 20px;
+    display: flex; /* ფლექსი რომ გვერდიგვერდ დადგეს ტექსტი და ღილაკი */
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999; /* ყველაფრის ზემოთ რომ იყოს */
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+    
+    /* თავიდან დავმალოთ, JS გამოაჩენს თუ საჭიროა */
+    display: none; 
+}
+
+.cookie-container p {
+    margin: 0;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    padding-right: 20px;
+}
+
+.cookie-container button {
+    background-color: #F48E28;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    white-space: nowrap; /* ტექსტი რომ არ ჩამოვარდეს */
+}
+
+.cookie-container button:hover {
+    background-color: #e07b1f;
+}

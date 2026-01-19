@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="./js/script.js"></script>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body class="body">
+    <header class="header">
+        <div class="div1">
+            <nav class="nav1">
+                <a href="">
+                    <img src="./images/logo.png" alt="logo">
+                </a>
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Menu</a>
+                    </li>
+                    <li>
+                        <a href="">Service</a>
+                    </li>
+                    <li>
+                        <a href="">Shop</a>
+                    </li>
+                </ul>
+                <div class="burger-bar">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="sec1">
+        <div class="div2">
+            <div class="left-block">
+                <h1>The Fastest Delivery In Your City</h1>
+                <p>Fast and reliable delivery service right to your doorstep.</p>
+                <button>order now</button>
+            </div>
+            <div class="right-block"> 
+                <div class="absolute-block">
+                    <img src="./images/burger.png" alt="">
+                    <h4>Burger</h4>
+                    <p>Mushroom Sauce</p>
+                        <span class="price">$5.15</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <i class="fa-solid fa-arrow-left"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h4 class="h4">Register</h4>
+            <form action="#">
+                <label for="fname">First Name</label>
+                <input type="text" name="firstname" id="fname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" name="last name" id="lname" placeholder="Your last name..">
+
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address" placeholder="Your address..">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="example@mail.com">
+
+                <label for="password">Password</label>
+                <div class="password-wrapper">
+                    <input type="password" name="password" id="password" placeholder="Enter password...">
+                    <i class="fa-solid fa-eye" id="togglePassword"></i>
+                </div>
+
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <input type="submit" value="Submit">
+            </form>
+    </section>
+    <section class="sec4">
+       <p class="title">Product</p>
+       <h1>Most Popular Items</h1> 
+       <div class="div4"> 
+            <!-- <div class="products">
+                <img src="./images/gyro.png" alt="">
+                <div class="productbody">
+                    <h4>Gyro Sandwich</h4>
+                    <span class="rate">⭐ 4.9</span>
+                    <div class="addbutton">
+                        <button>Add To Cart</button>
+                        <span class="price1">$15.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products">
+                <img src="./images/beef-enchiladas.png" alt="">
+                <div class="productbody">
+                    <h4>Enchilade</h4>
+                    <span class="rate">⭐ 5.0</span>
+                    <div class="addbutton">
+                        <button>Add To Cart</button>
+                        <span class="price1">$25.50</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products">
+                <img src="./images/green beans.png" alt="">
+                <div class="productbody">
+                    <h4>Green Beans</h4>
+                    <span class="rate">⭐ 4.9</span>
+                    <div class="addbutton">
+                        <button>Add To Cart</button>
+                        <span class="price1">$12.00</span>
+                    </div>
+                </div>
+            </div>
+       
+            <div class="products">
+                <img src="./images/pizza.png" alt="">
+                <div class="productbody">
+                    <h4>Pizza</h4>
+                    <span class="rate">⭐ 5.0</span>
+                    <div class="addbutton">
+                        <button>Add To Cart</button>
+                        <span class="price1">$18.50</span>
+                    </div>
+                </div>
+              </div>
+
+            <div class="products">
+                <img src="./images/chickenpot.png" alt="">
+                <div class="productbody">
+                    <h4>Chicken Pot Pie</h4>
+                    <span class="rate">⭐ 4.9</span>
+                    <div class="addbutton">
+                        <button>Add To Cart</button>
+                        <span class="price1">$25.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products">
+                <img src="./images/greensalad.png" alt="">
+                <div class="productbody">
+                    <h4>Green Salad</h4>
+                    <span class="rate">⭐ 4.9</span>
+                    <div class="addbutton">
+                        <button>Add To Cart</button>
+                        <span class="price1">$15.00</span>
+                    </div>
+                </div>
+            </div>
+        -->
+        </div>
+
+        <button class="see-more">
+            See More Product
+            <span class="arrow">
+            <i class="fa-solid fa-angle-right"></i>
+            </span>
+        </button>
+
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="columns">
+                <img src="./images/logo.png" alt="logo">
+                <p>Fast and reliable delivery service right to your doorstep.</p>
+
+                <div class="social-media">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="columns">
+                <h4>Opening restaurant</h4>
+                <ul>
+                    <li>Sat-Wet: 09:00am-10:00PM</li>
+                    <li>Thursday: 09:00am-11:00PM</li>
+                    <li>Friday: 09:00am-8:00PM</li>
+                </ul>
+            </div>
+
+            <div class="columns">
+                <h4>User Link</h4>
+                <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Order Delivery</a></li>
+                    <li><a href="">Payment & Tex</a></li>
+                    <li><a href="">Terms of Services</a></li>
+                </ul>
+            </div>
+
+            <div class="columns">
+                <h4>Contact Us</h4>
+                <p>1234 Country Club Ave<br>NC 123456, London, UK</p>
+                <p>+0123 456 7891</p>
+            </div>
+
+        </div>
+
+    </footer>
+    <div class="cookie-container" id="cookieBox">
+        <p>We use cookies to ensure you get the best experience on our website.</p>
+        <button id="acceptBtn">Accept</button>
+    </div>
+</body>
+</html>
